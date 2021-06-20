@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18121" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18091"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CalorieCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Weight" borderStyle="roundedRect" placeholder="Weight" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yls-BF-uYf">
+                                <rect key="frame" x="32" y="174" width="350" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="4Mv-th-Ip4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Event" borderStyle="roundedRect" placeholder="Event" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rg9-Pm-zmB">
+                                <rect key="frame" x="32" y="120" width="350" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="2Kf-OC-uAI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Duration in minutes" borderStyle="roundedRect" placeholder="Duration in minutes" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eL2-hr-fi1">
+                                <rect key="frame" x="32" y="228" width="350" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="eHE-Hp-NYh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sEb-E9-rV9">
+                                <rect key="frame" x="32" y="278" width="350" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="NYs-5h-TDv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
+                                <color key="textColor" red="0.43399853420000001" green="0.1024090458" blue="0.1176020629" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calories Burned Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bs8-Kt-Sob">
+                                <rect key="frame" x="32" y="69" width="350" height="31.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31.5" id="ksk-YT-QN8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="23"/>
+                                <color key="textColor" red="0.43399853420000001" green="0.1024090458" blue="0.1176020629" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8z2-bK-p05">
+                                <rect key="frame" x="32" y="326" width="350" height="139"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="139" id="tYM-Qv-dak"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
+                                <color key="textColor" red="0.43399853420000001" green="0.1024090458" blue="0.1176020629" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rg9-Pm-zmB" firstAttribute="top" secondItem="bs8-Kt-Sob" secondAttribute="bottom" constant="19.5" id="2xa-Ml-VEo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eL2-hr-fi1" secondAttribute="trailing" constant="32" id="65R-Q7-s0Q"/>
+                            <constraint firstItem="bs8-Kt-Sob" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="6sG-Zt-s6R"/>
+                            <constraint firstItem="eL2-hr-fi1" firstAttribute="top" secondItem="yls-BF-uYf" secondAttribute="bottom" constant="20" id="Iax-LG-8ab"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sEb-E9-rV9" secondAttribute="trailing" constant="32" id="Kee-m5-1Ed"/>
+                            <constraint firstItem="8z2-bK-p05" firstAttribute="top" secondItem="sEb-E9-rV9" secondAttribute="bottom" constant="23" id="N9o-Y6-c08"/>
+                            <constraint firstItem="bs8-Kt-Sob" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="Pck-5J-tPY"/>
+                            <constraint firstItem="yls-BF-uYf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="U74-qj-stU"/>
+                            <constraint firstItem="yls-BF-uYf" firstAttribute="top" secondItem="rg9-Pm-zmB" secondAttribute="bottom" constant="20" id="Xgg-gH-rfP"/>
+                            <constraint firstItem="rg9-Pm-zmB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="bOB-mq-6CT"/>
+                            <constraint firstItem="eL2-hr-fi1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="bqz-6T-cgu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bs8-Kt-Sob" secondAttribute="trailing" constant="32" id="h83-wJ-c6M"/>
+                            <constraint firstItem="bs8-Kt-Sob" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="hsp-zp-POh"/>
+                            <constraint firstItem="sEb-E9-rV9" firstAttribute="top" secondItem="eL2-hr-fi1" secondAttribute="bottom" constant="16" id="j6u-bn-88w"/>
+                            <constraint firstItem="bs8-Kt-Sob" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kpN-8b-0nb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yls-BF-uYf" secondAttribute="trailing" constant="32" id="p14-lp-Yq4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rg9-Pm-zmB" secondAttribute="trailing" constant="32" id="sJ1-SK-3TI"/>
+                            <constraint firstItem="sEb-E9-rV9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="uRn-77-6vF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8z2-bK-p05" secondAttribute="trailing" constant="32" id="uUv-nm-FOx"/>
+                            <constraint firstItem="8z2-bK-p05" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="zl5-vt-MSq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="durationTextField" destination="eL2-hr-fi1" id="udW-Fp-E5S"/>
+                        <outlet property="eventTextField" destination="rg9-Pm-zmB" id="Gzw-1Z-rke"/>
+                        <outlet property="result" destination="8z2-bK-p05" id="JVL-Mc-Dg6"/>
+                        <outlet property="weightTextField" destination="yls-BF-uYf" id="CbZ-mN-UFm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="92.753623188405811" y="93.75"/>
+        </scene>
+    </scenes>
+</document>
